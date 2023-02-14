@@ -36,25 +36,41 @@ logo {
 .main-grid {
     /* background: url(https://www.toptal.com/designers/subtlepatterns/uploads/fabric_1.png); */
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 2em;
-    grid-auto-rows: minmax(100px, auto);
-    margin: 30px;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(100px. auto);
+    gap: 1rem;
+    margin: 1rem;
+    justify-items: center;
+    align-items: center;
 }
 
 .main-grid > div {
-    border: black 5px solid;
+    border: black 2px solid;
+    background-color: red;
     
 }
 
-.oolumnn.titles {
+.work-title {
+    justify-content: center;
+}
+
+.work-content {
+    grid-column: span 3;
+}
+
+.about-content {
+    grid-column: span 3;
 
 }
 
-.oolumnn.content {
-   
+.about-title {
+
 }
 
-h2 {
-    align: center;
+.contact-title {
+
 }
+
+.contact-content {
+    grid-column: span 3;
