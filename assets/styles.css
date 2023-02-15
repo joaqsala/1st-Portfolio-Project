@@ -36,7 +36,6 @@ logo {
 .main-grid {
     /* background: url(https://www.toptal.com/designers/subtlepatterns/uploads/fabric_1.png); */
     display: grid;
-    height: 100vh;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: minmax(100px. auto);
     gap: 1rem;
@@ -57,9 +56,23 @@ logo {
 
 .work-content {
     grid-column: span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.proj-1 {
+    grid-row: span 2;
+}
 
+.proj-2,
+.proj-3 {
+    height: auto;
+}
 
-
+.screenshots{
+    max-width: 75%;
+    
 }
 
 .about-content {
