@@ -32,12 +32,13 @@ a {
 logo {
 
 }
-
+main {
+        padding: 0 50px;
+}
 .main-grid {
     /* background: url(https://www.toptal.com/designers/subtlepatterns/uploads/fabric_1.png); */
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: minmax(100px. auto);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     margin: 1rem;
     justify-items: center;
@@ -51,11 +52,11 @@ logo {
 }
 
 .work-title {
-    justify-content: center;
+
 }
 
 .work-content {
-    grid-column: span 3;
+    grid-column: span 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
@@ -72,15 +73,16 @@ logo {
 
 .screenshots{
     max-width: 75%;
-    
 }
 
 .about-content {
-    grid-column: span 3;
-
+    grid-column: span 2;
+    display: flex;
 }
 
 .about-title {
+    display: flex;
+    
 
 }
 
@@ -89,4 +91,5 @@ logo {
 }
 
 .contact-content {
-    grid-column: span 3;
+    grid-column: span 2;
+}
