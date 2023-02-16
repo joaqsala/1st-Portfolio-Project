@@ -5,30 +5,39 @@
     padding: 0;
 }
 
+/* start of body */
 body{
     background-color: #E1D7C6;
 }
 
-/* start of body */
-h1 {
-    color: white;
-    /* display: inline-block; */
-
-}
-
-/* start of header/nav */
-nav {
+/* start of header */
+header {
+    padding: 2rem;
     background-color: #579BB1;
-    box-sizing: border-box; /*needed ?*/
+    color: white;
 }
 
-ul {
-    text-align: right;
+header h1 {
+    display: inline-block;
+    font-size: 2rem;
+}
+
+/* start of nav */
+nav {
+    padding-top: 1.5rem;
+    float: right;
     font-size: 1.5em;
-    padding: 15px;
 }
 
-nav a {
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+header nav a {
     color: white;
     margin: 15px;
     text-decoration: none;
@@ -38,16 +47,16 @@ nav a {
 logo {
 
 }
+
 main {
-        padding: 0 50px;
+        margin: 2rem 10rem 0 4rem;
 }
 .main-grid {
     /* background: url(https://www.toptal.com/designers/subtlepatterns/uploads/fabric_1.png); */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* grid-template-rows: auto; */
-    gap: 1rem;
-    margin: 1rem;
+    row-gap: 5rem;
     /* justify-content: center; */
     justify-items: center;
     align-items: start;
@@ -75,15 +84,20 @@ main {
 }
 .proj-1 {
     grid-row: span 2;
+    height: 100%;
 }
 
-.proj-2,
+.proj-2 {
+    height: 100%;
+    width: 80%
+}
+
 .proj-3 {
     height: auto;
 }
 
 .screenshots{
-    width: 100%;
+    width: 90%;
     padding: 5px;
 }
 
@@ -100,8 +114,6 @@ main {
 }
 .about-title {
     display: flex;
-
-
 }
 
 .contact-title {
