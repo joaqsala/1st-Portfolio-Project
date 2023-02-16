@@ -7,7 +7,7 @@
 
 /* start of body */
 body{
-    background-color: #E1D7C6;
+    background-color: #ECE8DD;
 }
 
 /* start of header */
@@ -45,43 +45,53 @@ header nav a {
 
 /* start of main */
 logo {
-
+/* will be added later */
 }
 
 main {
-        margin: 2rem 10rem 0 4rem;
+        margin: 4rem 10rem 0 4rem;
 }
+
+/* Grid design with 3 columns */
 .main-grid {
     /* background: url(https://www.toptal.com/designers/subtlepatterns/uploads/fabric_1.png); */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: auto; */
-    row-gap: 5rem;
-    /* justify-content: center; */
+    grid-template-rows: auto;
+    row-gap: 10rem;
     justify-items: center;
-    align-items: start;
+    /* align-items: start; */
 }
 
-.main-grid > div {
-    border: black 2px solid;
-    background-color: red;
-    
+/* first row of box, adjoins cells 2 and 3 */
+.about-content {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    border-left: 3px #579BB1 solid;
+    border-radius: 5px;
 }
 
-.work-title {
+.about-img {
+    padding: 2rem 2rem;
 }
 
+p {
+    font-size: 16px;
+}
+
+/* second row of box, adjoins cells 2 and 3, and creates a 2x2 grid within it */
 .work-content {
     grid-column: span 2;
-    display: grid;
+    display: grid; 
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
     justify-items: center;
     align-items: center;
     border-left: 3px #579BB1 solid;
-    border-radius: 8px;
-
+    border-radius: 5px;
 }
+/*  */
 .proj-1 {
     grid-row: span 2;
     height: 100%;
@@ -98,22 +108,14 @@ main {
 
 .screenshots{
     width: 90%;
-    padding: 5px;
+    padding: 1rem;
 }
 
-.about-content {
-    grid-column: span 2;
-    display: flex;
-    align-items: center;
-    border-left: 3px #579BB1 solid;
-    border-radius: 8px;
-}
-
-.about-img {
-    padding: 0 20px;
-}
 .about-title {
-    display: flex;
+    
+}
+
+.work-title {
 }
 
 .contact-title {
@@ -123,5 +125,29 @@ main {
 .contact-content {
     grid-column: span 2;
     border-left: 3px #579BB1 solid;
-    border-radius: 8px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        margin: 5rem 6rem 0 2rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    main {
+        margin: 5rem 3rem 0 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        margin: 4rem 0 0 1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    main {
+        margin: 4rem 0 0 1rem;
+    }
 }
