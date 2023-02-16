@@ -91,7 +91,13 @@ p {
     border-left: 3px #579BB1 solid;
     border-radius: 5px;
 }
-/*  */
+
+/*images of past work */
+.screenshots{
+    width: 100%;
+    padding: 1rem;
+}
+
 .proj-1 {
     grid-row: span 2;
     height: 100%;
@@ -106,26 +112,24 @@ p {
     height: auto;
 }
 
-.screenshots{
-    width: 90%;
-    padding: 1rem;
-}
-
-.about-title {
-    
-}
-
-.work-title {
-}
-
-.contact-title {
-
-}
-
+/* content for last row of grid */
 .contact-content {
-    grid-column: span 2;
+    /* grid-column: span 2; */
+    padding: 2rem;
+    text-align: center;
     border-left: 3px #579BB1 solid;
     border-radius: 5px;
+}
+
+.contact-mail {
+    padding: 2rem;
+    text-align: center;
+
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
 }
 
 @media screen and (max-width: 1200px) {
