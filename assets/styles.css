@@ -39,14 +39,11 @@ nav ul li {
 
 header nav a {
     color: white;
-    margin: 15px;
+    margin: 1.2rem;
     text-decoration: none;
 }
 
 /* start of main */
-logo {
-/* will be added later */
-}
 
 main {
         margin: 4rem 10rem 0 4rem;
@@ -54,13 +51,11 @@ main {
 
 /* Grid design with 3 columns */
 .main-grid {
-    /* background: url(https://www.toptal.com/designers/subtlepatterns/uploads/fabric_1.png); */
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr 2fr;
     grid-template-rows: auto;
     row-gap: 10rem;
     justify-items: center;
-    /* align-items: start; */
 }
 
 /* first row of box, adjoins cells 2 and 3 */
@@ -77,7 +72,7 @@ main {
 }
 
 p {
-    font-size: 16px;
+    font-size: 1.25rem;
 }
 
 /* second row of box, adjoins cells 2 and 3, and creates a 2x2 grid within it */
@@ -85,11 +80,16 @@ p {
     grid-column: span 2;
     display: grid; 
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
     border-left: 3px #579BB1 solid;
     border-radius: 5px;
+}
+
+.work-content p {
+    color:#579BB1;
+    text-align: center;
 }
 
 /*images of past work */
@@ -100,12 +100,12 @@ p {
 
 .proj-1 {
     grid-row: span 2;
-    height: 100%;
+    width: 100%;
 }
 
 .proj-2 {
     height: 100%;
-    width: 80%
+    width: 90%;
 }
 
 .proj-3 {
@@ -114,7 +114,6 @@ p {
 
 /* content for last row of grid */
 .contact-content {
-    /* grid-column: span 2; */
     padding: 2rem;
     text-align: center;
     border-left: 3px #579BB1 solid;
@@ -124,14 +123,15 @@ p {
 .contact-mail {
     padding: 2rem;
     text-align: center;
-
 }
 
+/* footer content */
 footer {
     text-align: center;
     padding: 2rem;
 }
 
+/* start of media queries */
 @media screen and (max-width: 1200px) {
     main {
         margin: 5rem 6rem 0 2rem;
@@ -146,12 +146,90 @@ footer {
 
 @media screen and (max-width: 768px) {
     main {
-        margin: 4rem 0 0 1rem;
+        margin: 4rem 0 0 0;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+    
+    /* nav bar changes to two rows */
+    nav {
+        padding-top: 1rem;
+        float: none;
+        font-size: 1.5em;
+        clear: left;
+        width: 100%;
+    }
+    
+    nav ul {
+        list-style-type: none;
+    }
+    
+    nav ul li {
+        width: 32%;
+        text-align: center;
+    }
+    
+    header nav a {
+        margin: 0.5rem;
+    }
+    /* other changes to font size and padding changes */
+    p {
+        font-size: 1.15rem;
+    }
+
+    .about-img {
+        padding: 1rem 1rem;
+    }
+
+    .contact-content {
+        padding: 1rem;
+    }
+    
+    .contact-mail {
+        padding: 1rem;
     }
 }
 
 @media screen and (max-width: 576px) {
     main {
         margin: 4rem 0 0 1rem;
+    }
+/* nav bar change to smaller font abd */
+    nav {
+        font-size: 1.25rem;
+        clear: left;        
+    }
+
+    nav ul li {
+        width: 32%;
+        text-align: center;
+    }
+
+    /*changed grid for space  */
+    .main-grid {
+        grid-template-columns: 1fr 3fr 3fr;
+        row-gap: 8rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+    
+    h2 {
+        font-size: 1.25rem;
+
+    }
+    .contact-content {
+        padding: 0.5rem;
+    }
+    
+    .contact-mail {
+        padding: 0.5rem;
     }
 }
