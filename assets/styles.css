@@ -88,7 +88,7 @@ p {
 }
 
 .work-content p {
-    color:#579BB1;
+    color:#1b7c9d;
     text-align: center;
 }
 
@@ -98,18 +98,12 @@ p {
     padding: 1rem;
 }
 
-.proj-1 {
-    grid-row: span 2;
-    width: 100%;
-}
-
-.proj-2 {
-    height: 100%;
-    width: 90%;
-}
-
-.proj-3 {
+.proj-group,
+.proj-1,
+.proj-3,
+.proj-4{
     height: auto;
+    width:auto;
 }
 
 /* content for last row of grid */
