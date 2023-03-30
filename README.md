@@ -6,7 +6,7 @@ This repository serves as the portfolio for owner/author Joaquin Salazar. The po
 
 ## Usage
 ![Portfolio for Joaquin Salazar](assets/images/Webpage-screenshot.jpg)
-https://joaqsala.github.io/2-weekly-challenge/
+https://joaqsala.github.io/1st-Portfolio-Project/
 
 The webpage provides potential employers (and other programers) with a choice catalog of finished projects. Peruse at your leisure.
 
