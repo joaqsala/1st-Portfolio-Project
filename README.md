@@ -1,5 +1,5 @@
-# 2-weekly-challenge
-Portfolio
+# 1st-Portfolio-Project
+weekly-challenge-2
 
 # Description
 This repository serves as the portfolio for owner/author Joaquin Salazar. The portfolio highlights strengths, progress, and serves as an ongoing receptacle for growth.
